@@ -20,20 +20,21 @@ namespace FilterDigit
 
             bool ContainsDigit(int n)
             {
-                while (n != 0)
+                do
                 {
-                    if (Math.Abs(n%10)==digit)
+                    if (Math.Abs(n % 10) == digit)
                     {
                         return true;
                     }
 
                     n = n / 10;
-                }
+
+                } while (n != 0);
 
                 return false;
             }
         }
 
-        
+
     }
 }
