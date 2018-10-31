@@ -21,12 +21,14 @@ namespace FindNextBiggerNumber
 
             char[] digits = number.ToString().ToCharArray();
 
-            //Find the first digit that is smaller than the digit next to it
+            // Find the first digit that is smaller than the digit next to it
             int i;
             for (i = digits.Length - 1; i > 0; i--)
             {
                 if (digits[i] > digits[i - 1])
+                {
                     break;
+                }
             }
 
             if (i == 0)
@@ -50,7 +52,7 @@ namespace FindNextBiggerNumber
 
             Array.Sort(digits, i, digits.Length - i);
 
-            return Int32.Parse(new string(digits));
+            return int.Parse(new string(digits));
         }
 
         /// <summary>
@@ -84,7 +86,5 @@ namespace FindNextBiggerNumber
             b = a;
             a = d;
         }
-
-
     }
 }

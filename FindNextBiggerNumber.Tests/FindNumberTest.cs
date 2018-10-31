@@ -13,8 +13,8 @@ namespace FindNextBiggerNumber.Tests
         [Test]
         [Sequential]
         public void FindNextBiggerNumber(
-            [Values(12,513,2017,414,144,1234321,1234126,3456432,10,20)] int number, 
-            [Values(21,531,2071,441,414,1241233,1234162,3462345,-1,-1)] int expected)
+            [Values(12, 513, 2017, 414, 144, 1234321, 1234126, 3456432, 10, 20)] int number,
+            [Values(21, 531, 2071, 441, 414, 1241233, 1234162, 3462345, -1, -1)] int expected)
         {
             int result = FindNumber.FindNextBiggerNumber(number);
 

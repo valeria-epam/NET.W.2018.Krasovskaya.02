@@ -28,13 +28,11 @@ namespace FilterDigit
                     }
 
                     n = n / 10;
-
-                } while (n != 0);
+                }
+                while (n != 0);
 
                 return false;
             }
         }
-
-
     }
 }

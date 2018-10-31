@@ -9,7 +9,7 @@ namespace InsertNumber
     public class InsertNumberTask
     {
         /// <summary>
-        /// Insert one numeber in the other number from index1 to index2 bits
+        /// Insert one number in the other number from index1 to index2 bits
         /// </summary>
         /// <param name="numSource"></param>
         /// <param name="numIn"></param>

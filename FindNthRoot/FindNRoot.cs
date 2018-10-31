@@ -15,22 +15,22 @@ namespace FindNthRoot
                 throw new ArgumentOutOfRangeException(nameof(rootPower));
             }
 
-            if (epsilon<=0)
+            if (epsilon <= 0)
             {
                 throw new ArgumentOutOfRangeException(nameof(epsilon));
             }
 
-            if (number<0)
+            if (number < 0)
             {
                 throw new ArgumentOutOfRangeException(nameof(number));
             }
 
             double x0 = number / rootPower;
-            double x1 = (1.0 / rootPower) * ((rootPower - 1) * x0 + number / Power(x0, rootPower - 1));
+            double x1 = (1.0 / rootPower) * (((rootPower - 1) * x0) + (number / Power(x0, rootPower - 1)));
             while (Math.Abs(x1 - x0) > epsilon)
             {
                 x0 = x1;
-                x1 = (1.0 / rootPower) * ((rootPower - 1) * x0 + number / Power(x0, rootPower - 1));
+                x1 = (1.0 / rootPower) * (((rootPower - 1) * x0) + (number / Power(x0, rootPower - 1)));
             }
 
             return x1;
