@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FilterDigit
 {
     public static class Filter
     {
+        /// <summary>
+        /// Filters <paramref name="numbers" /> by the specified <paramref name="digit" />
+        /// </summary>
+        /// <param name="numbers">The numbers to filter.</param>
+        /// <param name="digit">The digit by which <paramref name="numbers" /> wil be filtered.</param>
         public static IEnumerable<int> ByDigit(IEnumerable<int> numbers, int digit)
         {
             foreach (var number in numbers)

@@ -80,6 +80,9 @@ namespace FindNextBiggerNumber
             return (result, stopWatch.Elapsed);
         }
 
+        /// <summary>
+        /// Swaps the specified <paramref name="a"/> to <paramref name="b"/>.
+        /// </summary>
         private static void Swap(ref char a, ref char b)
         {
             char d = b;

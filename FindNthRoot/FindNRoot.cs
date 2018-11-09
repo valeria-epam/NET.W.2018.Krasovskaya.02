@@ -1,13 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FindNthRoot
 {
     public static class FindNRoot
     {
+        /// <summary>
+        /// Returns the <paramref name="rootPower"/> root of <paramref name="number"/> with <paramref name="epsilon"/> accuracy.
+        /// </summary>
+        /// <param name="number">The number to find the <paramref name="rootPower"/> root.</param>
+        /// <param name="rootPower">The root power.</param>
+        /// <param name="epsilon">Accuracy of the result.</param>
         public static double FindRoot(double number, int rootPower, double epsilon)
         {
             if (rootPower < 1)
@@ -36,6 +38,12 @@ namespace FindNthRoot
             return x1;
         }
 
+        /// <summary>
+        /// Powers the specified number in <paramref name="power"/> degree.
+        /// </summary>
+        /// <param name="number">The number.</param>
+        /// <param name="power">The power.</param>
+        /// <returns></returns>
         private static double Power(double number, int power)
         {
             double result = number;
